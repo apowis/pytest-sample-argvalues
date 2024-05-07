@@ -1,0 +1,23 @@
+[build-system]
+
+requires = ["setuptools >= 65.5.0","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-sample-argvalues"
+description = "A utility function to help choose a random sample from your argvalues in pytest."
+version = "0.0.1"
+authors = [{name = "Adam Powis"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python = ">=3.8.0"
+dependencies = [
+    "iteration-utilities",
+    "pytest",
+]
+
+[project.optional-dependencies]
+test = [
+    "pylint",
+]
